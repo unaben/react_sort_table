@@ -1,5 +1,5 @@
 import Table from "./Table";
-import tableData2 from "../tableData2.json";
+import tableDataTwo from "../tableDataTwo.json";
 
 const columns = [
   { label: "Name", accessor: "name", sortable: true },
@@ -8,16 +8,16 @@ const columns = [
   { label: "Course price", accessor: "money", sortable: true },
 ];
 
-const RenderAnotherTable = () => {
+const RenderTable = () => {
   return (
     <>
       <Table
         caption="List of developers with an affordable course (has no default sorting)."
-        data={tableData2}
+        data={tableDataTwo}
         columns={columns}
       />
     </>
   );
 };
 
-export default RenderAnotherTable;
+export default RenderTable;

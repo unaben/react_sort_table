@@ -1,6 +1,6 @@
 import Table from "./components/Table";
-import tableData1 from "./tableData1.json";
-import RenderAnotherTable from "./components/RenderAnotherTable";
+import tableDataOne from "./tableDataOne.json";
+import RenderTable from "./components/RenderTable";
 
 const columns = [
   { label: "Full Name", accessor: "full_name", sortable: true },
@@ -16,11 +16,11 @@ const App = () => {
       <h1>Reusable sortable table with React</h1>
       <Table
         caption="Developers currently enrolled in this course. The table below is ordered (descending) by the Gender column."
-        data={tableData1}
+        data={tableDataOne}
         columns={columns}
       />
       <br />
-      <RenderAnotherTable />
+      <RenderTable />
       <br />
     </div>
   );
