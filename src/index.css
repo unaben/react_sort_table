@@ -67,7 +67,6 @@ th.down {
 .table tbody tr:first-child td {
   border-top: none;
 }
-
 .table tbody tr:nth-child(n) td {
   background: #eff0f0;
 }
